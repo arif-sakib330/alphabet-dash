@@ -10,7 +10,30 @@ function hiddenRemove(elementId) {
 function setBgOfKey(elementId) {
   const element = document.getElementById(elementId);
   element.classList.add("bg-orange-400");
-  console.log(element);
+  // console.log(element);
+}
+function removeBgOfKey(elementId) {
+  const element = document.getElementById(elementId);
+  element.classList.remove("bg-orange-400");
+  // console.log(element);
+}
+
+function getTextValue(elementId) {
+  const elementIdText = document.getElementById(elementId);
+  const elementIdTextValue = elementIdText.innerText;
+  const value = parseInt(elementIdTextValue);
+  return value;
+}
+
+function updateTextValue(elementId, value) {
+  const element = document.getElementById(elementId);
+  element.innerText = value;
+}
+
+function getElementText(elementId) {
+  const element = document.getElementById(elementId);
+  const text = element.innerText;
+  return text;
 }
 
 function getAlphabets() {
